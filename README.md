@@ -181,8 +181,10 @@ if __name__ == "__main__":
     print("\n [+] Saved latent sequences for LSTM training!")
 ```
 
+Now, after you do all this AE modelling, the result would be in the format of .npy file
+(how to interpret this? - it would be like a numpy array format)
 
-
+For LSTM - we only need the .npy file and I gave that directly so it can be used directly when you guys are doing LSTM.
 
 
 
