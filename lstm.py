@@ -52,7 +52,7 @@ def compute_anomaly_scores(model, X):
             scores.append(error)
     return np.array(scores)
 
-def main():
+def run_lstm_pipeline():
     scores_dict = {}
 
     for file_path, model_name in [("dense_latent_seq.npy", "dense"), ("sparse_latent_seq.npy", "sparse")]:
@@ -81,6 +81,3 @@ def main():
 
     np.save("lstm_anomaly_scores_fused.npy", final_scores)
     print("\n[+] Saved fused anomaly scores as lstm_anomaly_scores_fused.npy")
-
-if __name__ == "__main__":
-    main()
