@@ -1,3 +1,4 @@
+
 import os
 import pandas as pd
 import numpy as np
@@ -137,13 +138,12 @@ def build_sequences(latents, seq_len=50):
         sequences.append(latents[i:i+seq_len])
     return np.stack(sequences)
 
-
 # ===============================
-# Main Function
+# 5. Wrap-up function
 # ===============================
-if __name__ == "__main__":
+def run_ae_pipeline():
     # --- Step 1: Load Excel Sheet ---
-    file_path = r"C:\Users\Hafeezur Rahman A\OneDrive\Desktop\filled_dates.xlsx"   
+    file_path = r"C:\Users\annie\Downloads\filled_dates.xlsx"   
     X_tensor, df, scaler = load_and_preprocess(file_path, time_column=None)
 
     dataset = TensorDataset(X_tensor)
