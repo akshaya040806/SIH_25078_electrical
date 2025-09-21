@@ -186,7 +186,7 @@ Now, after you do all this AE modelling, the result would be in the format of .n
 
 For LSTM - we only need the .npy file and I gave that directly so it can be used directly when you guys are doing LSTM.
 
-
+Vijay: i have uploaded my lstm model in the repo, i'll explain the working of my model in here tommorow as i am lazy today -to be continued...
 
 
 
